@@ -1,0 +1,25 @@
+[user]
+	name = akela1101
+	email = akela1101@gmail.com
+[color]
+	ui = true
+[receive]
+	denyCurrentBranch = ignore
+[push]
+	default = current
+[core]
+	editor = nano
+	autocrlf = input
+	safecrlf = false
+	whitespace = cr-at-eol
+	excludesfile = ~/.gitignore_global
+[alias]
+	co = checkout
+	cp = cherry-pick
+	rc = !git reset --hard && git clean -dff && git submodule foreach --recursive git reset --hard
+	cb = !git branch --merged origin/master | grep -v master | xargs -n 1 git branch -d
+	cl = clone --recursive
+[credential]
+	helper = cache
+[submodule]
+	recurse = true
