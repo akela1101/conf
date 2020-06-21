@@ -23,3 +23,6 @@
 	helper = cache
 [submodule]
 	recurse = true
+[include]
+    path = ~/.gitconfig_local
+	# can be used to change user.name or apply other includeIf for directory
