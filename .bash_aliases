@@ -9,9 +9,6 @@ export LANGUAGE=en_US.UTF-8
 # history size 100K
 export HISTFILESIZE=100000
 
-# Save and reload the history after each command finishes
-export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
-
 # Using **
 shopt -s globstar
 
@@ -90,6 +87,3 @@ extract ()
 		echo "'$1' is not a valid file!"
 	fi
 }
-
-
-
