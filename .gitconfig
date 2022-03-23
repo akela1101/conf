@@ -16,8 +16,8 @@
 [alias]
 	co = checkout
 	cp = cherry-pick
-	rc = !git reset --hard && git clean -dff && git submodule foreach --recursive git reset --hard
-	cb = !git branch --merged origin/master | grep -v master | xargs -n 1 git branch -d
+	bang = !git reset --hard && git clean -dff && git submodule foreach --recursive git reset --hard
+	clean-branches = !git branch --merged origin/master | grep -v master | xargs -n 1 git branch -d
 	cl = clone --recursive
 [credential]
 	helper = cache
